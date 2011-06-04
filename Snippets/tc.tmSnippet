@@ -6,19 +6,19 @@
 	<string>/*jslint indent: 2, onevar: false */
 /*global require */
 
-var buster = require("buster");
+var buster = require('buster');
 var assert = buster.assert;
 
 var ${2:${1/(?:_|-)([A-Za-z0-9]+)(?:\.js)?/(?2::\u$1)/g}} = require('${1:${TM_FILENAME/(.*?)(-|_)test.js/$1/}}');
 
-buster.testCase("$2", {
-  "should ${3:do stuff}": function () {
-    $0
-  }
+buster.testCase("${3:${1/(?:_|-)([A-Za-z0-9]+)(?:\.js)?/(?2::\u$1)/g}}", {
+	"should ${4:do stuff}": function () {
+		$0
+	}
 });
 </string>
 	<key>name</key>
-	<string>tc - testCase</string>
+	<string>tc</string>
 	<key>scope</key>
 	<string>source.js.node</string>
 	<key>tabTrigger</key>
