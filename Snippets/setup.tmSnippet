@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>assert.equals(${1:actual}, ${2:expected});$0</string>
+	<string>setUp: function () {
+$0},
+</string>
 	<key>name</key>
-	<string>ase - assert equals</string>
+	<string>setup - setup method</string>
 	<key>scope</key>
 	<string>source.js.node</string>
 	<key>tabTrigger</key>
-	<string>ase</string>
+	<string>setup</string>
 	<key>uuid</key>
-	<string>016835BD-9D1C-452F-8B57-2D73F1671BF0</string>
+	<string>AA6B70EB-19F7-4737-96DF-E902E6C43621</string>
 </dict>
 </plist>

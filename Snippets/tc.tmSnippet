@@ -18,7 +18,7 @@ buster.testCase("${3:${1/(?:_|-)([A-Za-z0-9]+)(?:\.js)?/(?2::\u$1)/g}}", {
 });
 </string>
 	<key>name</key>
-	<string>tc</string>
+	<string>tc - new testCase file</string>
 	<key>scope</key>
 	<string>source.js.node</string>
 	<key>tabTrigger</key>

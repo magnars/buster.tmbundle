@@ -10,7 +10,7 @@
 });
 </string>
 	<key>name</key>
-	<string>tcc</string>
+	<string>tcc - additional testCase</string>
 	<key>scope</key>
 	<string>source.js.node</string>
 	<key>tabTrigger</key>

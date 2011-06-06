@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>assert.isObject($1);$0</string>
+	<string>assert.isObject(${1:obj});$0</string>
 	<key>name</key>
-	<string>aso</string>
+	<string>aso - assert isObject</string>
 	<key>scope</key>
 	<string>source.js.node</string>
 	<key>tabTrigger</key>

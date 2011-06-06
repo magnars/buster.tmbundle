@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>assert.equals(${1:actual}, ${2:expected});$0</string>
+	<string>"${1:context}": {
+	tt$0
+}</string>
 	<key>name</key>
-	<string>ase - assert equals</string>
+	<string>ntc - nested testCase</string>
 	<key>scope</key>
 	<string>source.js.node</string>
 	<key>tabTrigger</key>
-	<string>ase</string>
+	<string>ntc</string>
 	<key>uuid</key>
-	<string>016835BD-9D1C-452F-8B57-2D73F1671BF0</string>
+	<string>51C14331-4E21-457A-BF9D-79A461FF70D6</string>
 </dict>
 </plist>

@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>assert.isFunction($1);$0</string>
+	<string>assert.isFunction(${1:func});$0</string>
 	<key>name</key>
-	<string>asf</string>
+	<string>asf - assert isFunction</string>
 	<key>scope</key>
 	<string>source.js.node</string>
 	<key>tabTrigger</key>

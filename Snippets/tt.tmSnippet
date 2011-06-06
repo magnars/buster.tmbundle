@@ -7,7 +7,7 @@
 	$0
 }</string>
 	<key>name</key>
-	<string>tt</string>
+	<string>tt - additional test</string>
 	<key>scope</key>
 	<string>source.js.node</string>
 	<key>tabTrigger</key>
