@@ -2,23 +2,43 @@
 
 ## Common snippets
 
-Important: For now you have to install Dr. Nic's JavaScript Node bundle, then 
-change your current grammar to "JavaScript Node" (short cut: Shift+Ctrl+Alt+N)
-
-* tc => scaffolding for a new testCase
-* tcc => additional testCase
+* tc => new testCase (one for node, browser and node+browser)
 * tt => additional test
-* ntc => nested test case
-* setup => setup method
-* assert snippets
-  * ase - assert.equals(...)
-  * asf - assert.isFunction(...)
-  * aso - assert.isObject(...)
-  * asc - assert.called(...)
-  * ascw - assert.calledWith(...)
-  * asnc - assert.notCalled(...)
-  * asco - assert.calledOnce(...)
-  * asex - assert.exception(...)
+* cx => nested context
+* su => setup method
+* td => teardown method
+
+Assert and refute snippets follow a common pattern. They start with `as` or `re`
+the a mnemonic shortcut. Most are simply the 'initials' of the method name, but
+the best shortcuts are saved for the most common assertions.
+
+    asaco - assert.alwaysCalledOn
+    asacw - assert.alwaysCalledWith
+    asacwe - assert.alwaysCalledWithExactly
+    asat - assert.alwaysThrew
+    asc - assert.called
+    asc2 - assert.calledTwice
+    asc3 - assert.calledThrice
+    ascc - assert.callCount
+    ascn - assert.className
+    asco - assert.callOrder
+    asco - assert.calledOn
+    asco - assert.calledOnce
+    ascw - assert.calledWith
+    ascwe - assert.calledWithExactly
+    asd - assert.defined
+    ase - assert.equals
+    asin - assert.isNull
+    asio - assert.isObject
+    asm - assert.match
+    ass - assert.same
+    ast - assert.threw
+    astn - assert.tagName
+    asto - assert.typeOf
+    asx - assert.exception
+
+Refute mirrors assert exactly, except that they start with `re` instead of
+`as`. It's the beauty of symmetry.
 
 ## Installation
 

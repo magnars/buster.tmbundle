@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>assert.isObject(${1:obj});$0</string>
+	<string>assert.alwaysThrew(${1:spy}, ${2:exception})$0</string>
 	<key>name</key>
-	<string>aso - assert isObject</string>
+	<string>asat - assert alwaysThrew</string>
 	<key>scope</key>
-	<string>source.js.node</string>
+	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>aso</string>
+	<string>asat</string>
 	<key>uuid</key>
-	<string>8206A7FB-6F8C-42F3-A56C-27696A7589F2</string>
+	<string>00B69AF0-1559-4DE9-8CDE-5D9B1F04EB5B</string>
 </dict>
 </plist>

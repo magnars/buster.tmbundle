@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>assert.calledOn(${1:spy}, ${2:obj})$0</string>
+	<key>name</key>
+	<string>asco - assert calledOn</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>asco</string>
+	<key>uuid</key>
+	<string>A8118100-2A53-4417-9AB6-8B58A0FCDE6D</string>
+</dict>
+</plist>

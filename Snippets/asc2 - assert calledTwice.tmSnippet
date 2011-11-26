@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>setUp: function () {
-$0},
-</string>
+	<string>assert.calledTwice(${1:spy})$0</string>
 	<key>name</key>
-	<string>setup - setup method</string>
+	<string>asc2 - assert calledTwice</string>
 	<key>scope</key>
-	<string>source.js.node</string>
+	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>setup</string>
+	<string>asc2</string>
 	<key>uuid</key>
-	<string>AA6B70EB-19F7-4737-96DF-E902E6C43621</string>
+	<string>9B32090B-C465-4440-BF66-18F323645366</string>
 </dict>
 </plist>

@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>assert.exception(function () {
-	$1
-});$0</string>
+	<string>assert.alwaysCalledWith(${1:spy}, ${2:arguments})$0</string>
 	<key>name</key>
-	<string>asx - assert exception</string>
+	<string>asacw - assert alwaysCalledWith</string>
 	<key>scope</key>
-	<string>source.js.node</string>
+	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>asx</string>
+	<string>asacw</string>
 	<key>uuid</key>
-	<string>EADE6066-29BC-4D7C-B1AE-0F9632D08E07</string>
+	<string>8A1CC2B1-1165-406D-ADBE-68D5F1BD2CF1</string>
 </dict>
 </plist>

@@ -3,19 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>buster.testCase("${1:test name}", {
-	"should ${2:do stuff}": function () {
-		$0
-	}
-});
-</string>
+	<string>assert.isNull(${1:object});$0</string>
 	<key>name</key>
-	<string>tcc - additional testCase</string>
+	<string>asin - assert isNull</string>
 	<key>scope</key>
-	<string>source.js.node</string>
+	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>tcc</string>
+	<string>asin</string>
 	<key>uuid</key>
-	<string>5C02A7E0-2FE3-466F-BFA4-897E19C288D8</string>
+	<string>32AA1855-A76E-4958-9839-AA57FF3C3A72</string>
 </dict>
 </plist>

@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>assert.isFunction(${1:func});$0</string>
+	<string>assert.typeOf(${1:object}, ${2:expected});$0</string>
 	<key>name</key>
-	<string>asf - assert isFunction</string>
+	<string>asto - assert typeOf</string>
 	<key>scope</key>
-	<string>source.js.node</string>
+	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>asf</string>
+	<string>asto</string>
 	<key>uuid</key>
-	<string>147681AB-B6A4-440C-A2C5-B2D5FC49B912</string>
+	<string>4844B985-D53A-4BBF-A051-8A77F1C094B5</string>
 </dict>
 </plist>

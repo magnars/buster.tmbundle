@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>assert.calledWith(${1:stub}, ${2:arg});$0</string>
+	<string>assert.callOrder(${1:spy1}, ${2:spy2, ...})$0</string>
 	<key>name</key>
-	<string>ascw - assert calledWith</string>
+	<string>asco - assert callOrder</string>
 	<key>scope</key>
-	<string>source.js.node</string>
+	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>ascw</string>
+	<string>asco</string>
 	<key>uuid</key>
-	<string>DF79AC8C-450B-4653-B8F3-5F0FB234830B</string>
+	<string>60DDB4F9-6794-46D7-B53C-FC956E245B56</string>
 </dict>
 </plist>

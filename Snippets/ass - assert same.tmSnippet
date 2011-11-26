@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>"should ${3:do stuff}": function () {
-	$0
-}</string>
+	<string>assert.same(${1:actual}, ${2:expected});$0</string>
 	<key>name</key>
-	<string>tt - additional test</string>
+	<string>ass - assert same</string>
 	<key>scope</key>
-	<string>source.js.node</string>
+	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>tt</string>
+	<string>ass</string>
 	<key>uuid</key>
-	<string>1E343180-4299-4744-A794-007542E533CD</string>
+	<string>9B1B5759-CDCA-4E7C-852A-D919A498491C</string>
 </dict>
 </plist>

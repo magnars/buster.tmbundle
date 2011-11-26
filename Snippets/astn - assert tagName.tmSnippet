@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>assert.match(${1:actual}, ${2:expected});$0</string>
+	<string>assert.tagName(${1:element}, "${2:tagName}");$0</string>
 	<key>name</key>
-	<string>asm - assert match</string>
+	<string>astn - assert tagName</string>
 	<key>scope</key>
-	<string>source.js.node</string>
+	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>asm</string>
+	<string>astn</string>
 	<key>uuid</key>
-	<string>20FE89AE-D53C-4524-8DF0-1800F0F22050</string>
+	<string>E02FAC5D-B131-4F6A-AF53-7BCD273CE86F</string>
 </dict>
 </plist>

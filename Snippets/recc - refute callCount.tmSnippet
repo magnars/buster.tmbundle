@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>refute.callCount(${1:spy}, ${2:count})$0</string>
+	<key>name</key>
+	<string>recc - refute callCount</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>recc</string>
+	<key>uuid</key>
+	<string>AC6364BE-2464-46BE-AEDD-DAB96BB1C13B</string>
+</dict>
+</plist>

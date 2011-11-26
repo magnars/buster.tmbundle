@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>refute.exception(function () {
+	$0
+});</string>
+	<key>name</key>
+	<string>rex - refute exception</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>rex</string>
+	<key>uuid</key>
+	<string>6548DE73-1EBB-48B9-8C61-DEC7B36068C6</string>
+</dict>
+</plist>

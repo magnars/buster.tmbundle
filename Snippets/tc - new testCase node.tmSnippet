@@ -3,24 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>/*jslint indent: 2, onevar: false */
-/*global require */
-
-var buster = require('buster');
+	<string>var buster = require('buster');
 var assert = buster.assert;
+var refute = buster.refute;
 
-var ${2:${1/(?:_|-)([A-Za-z0-9]+)(?:\.js)?/(?2::\u$1)/g}} = require('${1:${TM_FILENAME/(.*?)(-|_)test.js/$1/}}');
+var ${2:${1/(?:_|-)([A-Za-z0-9]+)(?:\.js)?/(?2::\u$1)/g}} = require('../lib/${1:${TM_FILENAME/(.*?)(-|_)test.js/$1/}}');
 
 buster.testCase("${3:${1/(?:_|-)([A-Za-z0-9]+)(?:\.js)?/(?2::\u$1)/g}}", {
-	"should ${4:do stuff}": function () {
-		$0
-	}
+	tt$0
 });
 </string>
 	<key>name</key>
-	<string>tc - scaffolding for a new testCase</string>
+	<string>tc - new testCase node</string>
 	<key>scope</key>
-	<string>source.js.node</string>
+	<string>source.js</string>
 	<key>tabTrigger</key>
 	<string>tc</string>
 	<key>uuid</key>

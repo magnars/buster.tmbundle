@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>refute.calledThrice(${1:spy})$0</string>
+	<key>name</key>
+	<string>rec3 - refute calledThrice</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>rec3</string>
+	<key>uuid</key>
+	<string>BE068A99-0270-4BEF-BD60-4FDDFC00DD90</string>
+</dict>
+</plist>

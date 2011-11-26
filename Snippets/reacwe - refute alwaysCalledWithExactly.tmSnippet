@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>assert.equals(${1:actual}, ${2:expected});$0</string>
+	<string>refute.alwaysCalledWithExactly(${1:spy}, ${2:arguments})$0</string>
 	<key>name</key>
-	<string>ase - assert equals</string>
+	<string>reacwe - refute alwaysCalledWithExactly</string>
 	<key>scope</key>
-	<string>source.js.node</string>
+	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>ase</string>
+	<string>reacwe</string>
 	<key>uuid</key>
-	<string>016835BD-9D1C-452F-8B57-2D73F1671BF0</string>
+	<string>2FB90C3A-70E6-4158-A324-9C9394C2D2A9</string>
 </dict>
 </plist>

@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>"${1:context}": {
-	tt$0
-}</string>
+	<string>assert.alwaysCalledWithExactly(${1:spy}, ${2:arguments})$0</string>
 	<key>name</key>
-	<string>ntc - nested testCase</string>
+	<string>asacwe - assert alwaysCalledWithExactly</string>
 	<key>scope</key>
-	<string>source.js.node</string>
+	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>ntc</string>
+	<string>asacwe</string>
 	<key>uuid</key>
-	<string>51C14331-4E21-457A-BF9D-79A461FF70D6</string>
+	<string>09868F60-8DF5-4E28-B4FA-F92922F920EA</string>
 </dict>
 </plist>

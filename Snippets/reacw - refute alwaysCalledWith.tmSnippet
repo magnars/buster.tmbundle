@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>refute.alwaysCalledWith(${1:spy}, ${2:arguments})$0</string>
+	<key>name</key>
+	<string>reacw - refute alwaysCalledWith</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>reacw</string>
+	<key>uuid</key>
+	<string>958830BF-C3BD-4B62-9DC9-D7B23FE52DB5</string>
+</dict>
+</plist>

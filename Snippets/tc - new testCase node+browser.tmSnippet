@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>if (typeof require === "function" &amp;&amp; typeof module !== "undefined") {
+	var buster = require("buster");
+	var ${2:${1/(?:_|-)([A-Za-z0-9]+)(?:\.js)?/(?2::\u$1)/g}} = require('../lib/${1:${TM_FILENAME/(.*?)(-|_)test.js/$1/}}');
+}
+
+(function () {
+	var assert = buster.assert;
+	var refute = buster.refute;
+
+	buster.testCase('${3:${1/(?:_|-)([A-Za-z0-9]+)(?:\.js)?/(?2::\u$1)/g}}', {
+		tt$0
+	});
+}());</string>
+	<key>name</key>
+	<string>tc - new testCase node+browser</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>tc</string>
+	<key>uuid</key>
+	<string>8366CBF2-890E-4B7B-BAFB-D583168FE5BC</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>refute.className(${1:element}, "${2:className}");$0</string>
+	<key>name</key>
+	<string>recn - refute className</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>recn</string>
+	<key>uuid</key>
+	<string>D24A93BA-A700-4DD7-BD47-520DF4ECB21C</string>
+</dict>
+</plist>
