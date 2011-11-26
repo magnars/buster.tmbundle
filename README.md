@@ -12,30 +12,32 @@ Assert and refute snippets follow a common pattern. They start with `as` or `re`
 the a mnemonic shortcut. Most are simply the 'initials' of the method name, but
 the best shortcuts are saved for the most common assertions.
 
-    asaco - assert.alwaysCalledOn
-    asacw - assert.alwaysCalledWith
-    asacwe - assert.alwaysCalledWithExactly
-    asat - assert.alwaysThrew
-    asc - assert.called
+    ase - assert.equals
+    asm - assert.match
+
     asc1 - assert.calledOnce
     asc2 - assert.calledTwice
     asc3 - assert.calledThrice
-    ascc - assert.callCount
-    ascn - assert.className
-    asco - assert.callOrder
-    asco - assert.calledOn
     ascw - assert.calledWith
-    ascwe - assert.calledWithExactly
+    ascn - assert.className
+    astn - assert.tagName
+    asx - assert.exception
     asd - assert.defined
-    ase - assert.equals
     asin - assert.isNull
     asio - assert.isObject
-    asm - assert.match
+
     ass - assert.same
-    ast - assert.threw
-    astn - assert.tagName
     asto - assert.typeOf
-    asx - assert.exception
+    ast - assert.threw
+    asat - assert.alwaysThrew
+    asc - assert.called
+    ascc - assert.callCount
+    asco - assert.callOrder
+    asco - assert.calledOn
+    asaco - assert.alwaysCalledOn
+    asacw - assert.alwaysCalledWith
+    asacwe - assert.alwaysCalledWithExactly
+    ascwe - assert.calledWithExactly
 
 Refute mirrors assert exactly, except that they start with `re` instead of
 `as`. It's the beauty of symmetry.
