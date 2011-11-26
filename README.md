@@ -17,13 +17,13 @@ the best shortcuts are saved for the most common assertions.
     asacwe - assert.alwaysCalledWithExactly
     asat - assert.alwaysThrew
     asc - assert.called
+    asc1 - assert.calledOnce
     asc2 - assert.calledTwice
     asc3 - assert.calledThrice
     ascc - assert.callCount
     ascn - assert.className
     asco - assert.callOrder
     asco - assert.calledOn
-    asco - assert.calledOnce
     ascw - assert.calledWith
     ascwe - assert.calledWithExactly
     asd - assert.defined
