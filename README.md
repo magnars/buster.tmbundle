@@ -45,6 +45,9 @@ Refute mirrors assert exactly, except that they start with `re` instead of
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles/
     cd ~/Library/Application\ Support/TextMate/Bundles
     git clone git://github.com/magnars/buster.tmbundle.git "Buster.tmbundle"
+    
+Then reload your bundles: 
+
     osascript -e 'tell app "TextMate" to reload bundles'
 
 Alternately, in TextMate, from your drop down menu, select Bundles -> Bundle Editor -> Reload Bundles.
