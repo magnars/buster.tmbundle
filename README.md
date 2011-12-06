@@ -1,5 +1,9 @@
 # Textmate Bundle for Buster.JS
 
+## Commands
+
+* cmd+shift+r => Run all tests
+
 ## Common snippets
 
 * tc => new testCase (one for node, browser and node+browser)
@@ -47,8 +51,8 @@ Refute mirrors assert exactly, except that they start with `re` instead of
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles/
     cd ~/Library/Application\ Support/TextMate/Bundles
     git clone git://github.com/magnars/buster.tmbundle.git "Buster.tmbundle"
-    
-Then reload your bundles: 
+
+Then reload your bundles:
 
     osascript -e 'tell app "TextMate" to reload bundles'
 
