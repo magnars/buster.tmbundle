@@ -5,14 +5,13 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#! /usr/local/bin/node
+	<string>#!/usr/bin/env node
 
 process.chdir(process.env.TM_PROJECT_DIRECTORY);
 
 var cli = require(process.env.TM_PROJECT_DIRECTORY + "/node_modules/buster/node_modules/buster-test-cli").cli;
 
 cli.test.create().run(["-r", "html"]);
-
 </string>
 	<key>input</key>
 	<string>none</string>
