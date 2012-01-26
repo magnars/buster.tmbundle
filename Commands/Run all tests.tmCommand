@@ -9,7 +9,7 @@
 
 process.chdir(process.env.TM_PROJECT_DIRECTORY);
 
-var cli = require(process.env.TM_PROJECT_DIRECTORY + "/node_modules/buster/node_modules/buster-test-cli").cli;
+var cli = require("buster/node_modules/buster-test-cli").cli;
 
 cli.test.create().run(["-r", "html"]);
 </string>
