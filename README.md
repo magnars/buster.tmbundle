@@ -46,6 +46,12 @@ the best shortcuts are saved for the most common assertions.
 Refute mirrors assert exactly, except that they start with `re` instead of
 `as`. It's the beauty of symmetry.
 
+## Prerequisite
+
+* Buster.js has to be installed.
+* The shell scirpt for the Run all tests command has to find node in PATH. To ensure this either update your `~/.MacOSX/environment.plist` or set the PATH variable in TextMates Preferences/Advanced/Shell Variables accordingly. See the [TextMate manual](http://manual.macromates.com/en/shell_commands#search_path) for details.
+* The shell scirpt for the Run all tests command requires `buster/node_modules/buster-test-cli`. To ensure this add a Shell Variable `NODE_PATH` referencing your node modules in TextMates Preferences/Advanced/Shell Variables, e.g. to `/usr/local/lib/node_modules`.
+
 ## Installation
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles/
