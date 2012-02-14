@@ -27,6 +27,7 @@ the best shortcuts are saved for the most common assertions.
     astn - assert.tagName
     asx - assert.exception
     asd - assert.defined
+    asif - assert.isFunction
     asin - assert.isNull
     asio - assert.isObject
 
