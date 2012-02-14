@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>assert.isFunction(${1:function});$0</string>
+	<key>name</key>
+	<string>asif - assert isFunction</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>asif</string>
+	<key>uuid</key>
+	<string>84E592C9-98A7-47CA-A6C4-D1DCA13A4F38</string>
+</dict>
+</plist>
