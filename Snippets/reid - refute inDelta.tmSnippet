@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>refute.inDelta(${1:actual}, ${2:expected}, ${3:delta});$0</string>
+	<key>name</key>
+	<string>reid - refute inDelta</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>reid</string>
+	<key>uuid</key>
+	<string>FC43AF81-7C64-4ABC-A76E-C4EEA2C4028F</string>
+</dict>
+</plist>
