@@ -3,6 +3,7 @@
 ## Commands
 
 * cmd+shift+r => Run all tests
+* cmd+r => Run current test file
 
 ## Common snippets
 
