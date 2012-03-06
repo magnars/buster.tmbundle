@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env node
+
+process.chdir(process.env.TM_PROJECT_DIRECTORY);
+
+var cli = require("buster/node_modules/buster-test-cli").cli;
+
+cli.test.create().run(["-r", "html", "-t", process.env.TM_FILEPATH]);
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Run current test file</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>uuid</key>
+	<string>0319EB36-7FE7-4E49-B4D5-6C502B30BFC2</string>
+</dict>
+</plist>
