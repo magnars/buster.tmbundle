@@ -73,7 +73,7 @@ The Buster.JS TM Bundle is currently authored by Magnar Sveen. Contributors and 
 
 * **Magnar Sveen** - Author/Main contributor
 * **Stefan Scheidt** - Improved support for multiple platforms
-* **Thomas Pickert** - Added some more snippets
+* **Thomas Pickert** - Added cmd+r and some more snippets
 
 ## License
 
