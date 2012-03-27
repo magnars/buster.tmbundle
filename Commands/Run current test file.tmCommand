@@ -9,9 +9,126 @@
 
 process.chdir(process.env.TM_PROJECT_DIRECTORY);
 
-var cli = require("buster/node_modules/buster-test-cli").cli;
+var
+	testCli = require("buster/node_modules/buster-test-cli").cli.test.create(),
+	configFile = testCli.findConfigFile(),
+	config = require("buster/node_modules/buster-test-cli/node_modules/buster-configuration").create(),
+	minimatch = require("buster/node_modules/buster-test-cli/node_modules/buster-cli/node_modules/minimatch/");
 
-cli.test.create().run(["-r", "html", "-t", process.env.TM_FILEPATH]);
+config.loadFile(configFile);
+
+/*
+ * Iterates over all groups and all test patterns within those groups to find a matching
+ * test pattern for the given filePath
+ *
+ * @param path to the file that is to be tested
+ * @param configuration groups
+ *
+ * @return true if match is found, false otherwise
+ */
+function matchesAnyTestPattern(filePath, groups) {
+	var
+		group,
+		i, j, l, m;
+
+	for (i = 0, l = groups.length; i &lt; l; i += 1) {
+		for (j = 0, group = groups[i], m = group.tests.length; j &lt; m; j += 1) {
+
+			// test filePath against test pattern (prepended with path to project root)
+			if (minimatch(filePath, group.rootPath + "/" + group.tests[j])) {
+				return true;
+			}
+
+		}
+	}
+
+	// no match found for any of the patterns
+	return false;
+}
+
+/*
+ * Assumes that filePath is a source file, and tries to guess substitutions
+ * for each group configuration to find the corresponding test file
+ *
+ * @param path to the source file
+ * @param configuration groups
+ *
+ * @return the substituted file path if match is found, false otherwise
+ */
+function matchesAnyTestPatternWithSubstitutions(filePath, groups) {
+	var
+		group,
+		i, j, k, l, m, o,
+		substitutedFilePath,
+		testMatches,
+		sourceMatches,
+		regEx = /(?:([^/*]+)(?=\/|$))/g;
+
+	for (i = 0, l = groups.length; i &lt; l; i += 1) {
+		group = groups[i];
+
+		// we make some assumptions here to guess the test file
+         // to have any chance of success, the number of sources and tests patterns have to be equal
+		if (group.tests.length !== group.sources.length) {
+			continue;
+		}
+
+		for (j = 0, m = group.tests.length; j &lt; m; j += 1) {
+
+			testMatches = group.tests[j].match(regEx);
+			sourceMatches = group.sources[j].match(regEx);
+
+			// if the number of matches in the test and source file paths are not equal
+			// we have no chance to success, so we skip
+			if (null === testMatches || null === sourceMatches || testMatches.length !== sourceMatches.length) {
+				continue;
+			}
+
+			substitutedFilePath = filePath;
+
+			// replace corresponding path fragments from sourceMatches to testMatches
+			for (k = 0, o = testMatches.length; k &lt; o; k += 1) {
+				substitutedFilePath = substitutedFilePath.replace(sourceMatches[k], testMatches[k]);
+			}
+
+			// test filePath against test pattern (prepended with path to project root)
+			if (minimatch(substitutedFilePath, group.rootPath + "/" + group.tests[j])) {
+				return substitutedFilePath;
+			}
+
+		}
+	}
+
+	// no match found for any of the patterns
+	return false;
+}
+
+
+// if the current file matches a pattern for a test file, run the test client with the current file
+if (matchesAnyTestPattern(process.env.TM_FILEPATH, config.groups)) {
+
+	// run current file as test
+	testCli.run(["-r", "html", "-t", process.env.TM_FILEPATH]);
+
+	// we're done, stop execution
+	return;
+}
+
+
+// try if we can match a test pattern by substituting parts of the file path
+// with parts from the respective test pattern
+if (false !== (substitutedFilePath = matchesAnyTestPatternWithSubstitutions(process.env.TM_FILEPATH, config.groups))) {
+
+	// run current file as test
+	testCli.run(["-r", "html", "-t", substitutedFilePath]);
+
+	// we're done, stop execution
+	return;
+}
+
+require("util").print("&lt;h1&gt;No test file found&lt;/h1&gt;"
++ "&lt;p&gt;We have tried our best to guess the path to the test file based on your configuration.&lt;/p&gt;"
++ "&lt;p&gt;If you believe the path to the test file could have been reasonably guessed, feel free to open an issue at &lt;a href=\"https://github.com/magnars/buster.tmbundle\"&gt;Buster.tmbundle@Github&lt;/a&gt; and give us a hint.&lt;/p&gt;");
 </string>
 	<key>input</key>
 	<string>none</string>
